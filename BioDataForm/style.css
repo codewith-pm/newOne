@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    font-variant:small-caps ;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+label {
+    font-weight: bold;
+    
+}
+input, select, textarea{
+    display: block;
+    width: 80%;
+    padding: 6px;
+    left: 15px;
+    margin: 5px auto 10px;
+}
+select{
+    width: 83%;
+}
+fieldset{
+    margin-bottom: 20px;
+}
+input[type=checkbox]{
+  display: inline;
+  width: 50%;
+}
+#skill{
+    display: block; 
+}
