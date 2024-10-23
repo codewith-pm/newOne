@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, sans-serif;
+    
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    margin: 4vh 8vw;
+}
+
+#result {
+    
+    font-size: 1.5em;
+}
+input[type="number"] {
+    appearance: textfield; /* Removes up/down arrows in Firefox */
+}
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Removes up/down arrows in Chrome, Safari, Edge, Opera */
+    margin: 0;
+}
+
+.main{
+    background-color: rgb(171, 214, 252);
+    width: 500px;
+    height: 550px;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.input{
+    display: flex;
+    margin: 40px auto 60px;
+
+    justify-content: baseline;
+}
+#btn{
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: green;
+}
+h1{
+    margin-bottom: 20px;
+}
+#userGuess{
+    font-size: 20px;
+    padding: 3px;
+}
