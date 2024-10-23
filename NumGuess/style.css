@@ -10,7 +10,9 @@ body{
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
-    margin: 4vh 8vw;
+    align-items: center;
+    margin: auto 8vw;
+    height: 100vh;
 }
 
 #result {
