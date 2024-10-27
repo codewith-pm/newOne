@@ -5,6 +5,11 @@
     color: azure;
     font-family: "Poppins", sans-serif;
 }
+body{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+}
 #head{
     text-align: center;
     margin-bottom: 10px; 
@@ -131,7 +136,5 @@ span:hover{
 }  
 
 @media (min-width:576) {
-    body{
-        height: 100dvh;
-    }
+    
 }
