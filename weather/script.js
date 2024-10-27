@@ -10,7 +10,7 @@ const wind = document.querySelector('.wind');
 
 const box = document.querySelector('.box');
 // box.style.display="none";
-window.onload= update();
+
 btn.addEventListener('click',update)
 
 async function update(){
@@ -33,3 +33,4 @@ async function update(){
         wind.textContent=datass.wind.speed+" km/h";
     }))
 }
+window.onload= update();
