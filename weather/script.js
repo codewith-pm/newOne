@@ -7,10 +7,20 @@ const sky_img = document.querySelector('#sky_img');
 const weather_name = document.querySelector('.weather_name');
 const humidity = document.querySelector('.humidity');
 const wind = document.querySelector('.wind');
+const container = document.querySelector('.container')
 
 const box = document.querySelector('.box');
-// box.style.display="none";
 
+if(navigator.onLine){
+    update();
+    }else{
+    const container = document.querySelector('.container')
+    container.textContent='You are Offline Please connect to Internet'
+    container.style.background="none"
+    container.style.color="red"
+    container.style.textAlign="center"
+
+    }
 btn.addEventListener('click',update)
 
 async function update(){
@@ -33,4 +43,3 @@ async function update(){
         wind.textContent=datass.wind.speed+" km/h";
     }))
 }
-window.onload= update();
