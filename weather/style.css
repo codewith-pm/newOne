@@ -2,43 +2,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: azure;
+    font-family: "Poppins", sans-serif;
 }
 .container{
-    border: 1px solid ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100dvh;
-    /* background-color: #a2d7f0; */
+    margin: 25px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 450px;
+    background: linear-gradient(135deg, #0eb5df, #2452eb);
+    border-radius: 25px;
 }
-.main{
-    border: 1px solid red;
-    /* height: 500px; */
-    margin: 20px;
-    padding: 20px;
-    background: rgba(55, 125, 153, 0.55);
-    border-radius: 20px;
+.input{
+    display: flex;
+    width: 100%;
+    margin:  15px auto;
+    position: relative;
+}
+#city_input{
+    width: 100%;
+    height: 42px;
+    color: #58595a;
+    outline: none;
+    border: none;
+    padding: 15px 60px 15px 20px;
+    font-size: large;
+    border-radius: 99px ;
+}
+#city_input:focus{
+    outline:3px solid #74767a;
+}
+span{
+    width: 42px;
+    height: 42px;
+    border-radius: 0 99px 99px 0;
+    padding: 7px;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+}
+span i{
+    font-size:30px ;
+    color: #58595a;
+}
+span i:hover{
+    color: #1a1c1f;
 }
 .box{
-    display: none;
-    flex-direction: column;
-    row-gap: 30px;
-    margin-top:50px ;
-    justify-content: center;
+    margin-top: 25px;
+}
+.box .row{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
-    
-    
+    /* margin: 20px; */
 }
+.box .row .city{
+    text-align: center;
+    font-size: 21px;
+}
+.box .row i{
+    font-size: 32px;
+}
+.weather{
+    font-size: 46px;
+}
+.row .climate{
+    margin: auto;
+    text-align: center;
 
-.userInput{
-    padding: 8px;
-    border-radius:69px ;
 }
-#btn{
-    padding: 8px;
-    background: #2452eb;
-    color: white;
-    
+.climate img{
+    width: 180px;
+    height: 180px;
 }
-
+.climate p{
+    margin-top: -35px;
+    font-size:48px;
+    font-weight: 500;
+}
+.row .col{
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+}
+.row .col img{
+    width: 50px;
+    height: 50px;
+}

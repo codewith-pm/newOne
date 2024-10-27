@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="asset/download.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="main">
-            <h2 style="text-align: center; margin-bottom: 20px;">Weather Checker</h2>
-                <input type="text" id="city_input" class="userInput" placeholder="Enter city" value="madurai">
-
-            
-            <button id="btn" onclick="update()">search</button>
-            <div class="box boxx" >
-                <h2 class="city">
-                   
-                </h2>
-                <h1 class="climate">
-                    
-                </h1>
-                <h3 class="weather">
-                    
-                </h3>
+        <h2 style="text-align: center; margin-bottom: 10px; font-size: 32px;">Weather Checker</h2>
+        <div class="input">
+            <input type="text" id="city_input" class="userInput" placeholder="Enter city" value="madurai">
+            <span><i class='bx bx-search btn'></i></span>
+        </div>
+        <div class="box" >
+            <div class="row">
+                <div class="city">
+                    <i class='bx bx-map'></i>
+                    <p class="city-name"> Madurai</p>
+                </div>
+                    <p class="weather"> 30°C</p>
             </div>
+            <div class="row">
+                <div class="climate">
+                    <img src="./asset/4102326_cloud_sun_sunny_weather_icon (1).png" alt="climate picture" id="sky_img">
+                    <p class="weather_name">Rain</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./asset/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./asset/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="initial">
 
         </div>
-        
     </div>
     
     <script src="script.js"></script>
