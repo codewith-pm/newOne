@@ -69,6 +69,11 @@ button:hover{
     .dob{
         flex-direction: column;
         justify-content: center;
+        align-item: stretch;
+    }
+    .dateOfBirth{
+        width:100%
+        
     }
     
     button{
