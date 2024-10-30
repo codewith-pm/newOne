@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background: linear-gradient(135deg, #4260e6, #6f77a3);
+}
+.main{
+    
+    height: 100vh;
+    width: 100%;
+    max-width: 650px;
+    padding: 100px 100px 0;
+    /* border: solid; */
+    line-height: 70px;
+}
+h1{
+    font-size: 47px;
+    font-weight: bolder;
+}
+#heading{
+    color: yellow;
+    border-bottom: 5px solid;
+}
+.dob{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding:15px ;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+}
+.dateOfBirth{
+    flex: 1;
+    font-size: 18px;
+    padding: 6px;
+}
+button{
+    padding: 6px;
+    color: #fff;
+    background-color: green;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+}
+p{
+    font-size: 21px;
+    margin: 45px 0 0 0;
+    line-height: normal;
+    color: #fff;
+}
+button:hover{
+    background-color: rgb(15, 112, 15);
+
+}
+
+@media (max-width:576px){
+    .main{
+        padding: 3em;
+        width: 100%;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .dob{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    button{
+        width: 50%;
+        align-self: center;
+    }
+}
