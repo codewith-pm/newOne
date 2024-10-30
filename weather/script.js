@@ -35,6 +35,10 @@ async function update(){
         let deg = datass.main.temp;
         let degVal=Math.floor(deg-273)+' °C'
         sky_img.src=`https://codewith-pm.github.io/newOne/weather/asset/${datass.weather[0].main.toLowerCase()}.png`
+<<<<<<< HEAD
+=======
+        
+>>>>>>> a5e4d24cbd6d9a8dab9523e8b5da0fd57ca67951
         cityname.textContent=datass.name;
         weather.textContent=degVal;
 
