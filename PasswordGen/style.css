@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg, rgb(70, 70, 150), rgb(112, 74, 112));
+    height: 100vh;
+}
+.container{
+    margin: 100px 0 0 100px;
+    width: 100%;
+    color: aliceblue;
+    
+    padding-left: 15px;
+
+}
+.main{
+    border-left: 7px solid rgb(194, 206, 23);
+    padding-left: 15px;
+    font-size: 21px;
+   
+    /* border: solid; */
+}
+.display{
+    margin: 55px 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+#hd{
+color: rgb(248, 155, 33);
+}
+.btn{
+    display: none;
+    padding: 7px 15px;
+    font-size: larger;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    background: green;
+}
+.btn:active{
+    background: darkorange;
+}
