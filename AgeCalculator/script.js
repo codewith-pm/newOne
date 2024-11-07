@@ -24,8 +24,8 @@ function calculate(){
     if(currentDate<birthDate){
         month--;
         console.log(month)
-        currentDate += new Date(birthYear, birthMonth, 0).getDate()
-        day = currentDate - birthDate
+        let excessDays= new Date(birthYear, birthMonth, 0).getDate()
+        day = parseInt(currentDate) + parseInt(excessDays) - birthDate
     }else{
         day = currentDate - birthDate
     }
