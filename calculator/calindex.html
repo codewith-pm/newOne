@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <div class="calculator">
+            <div class="row">
+                <h1>JS Calculator</h1>
+            </div>
+            <div class="row">
+                <input type="text" name="result" id="dis" readonly>
+            </div>
+            <div class="row">
+                <input type="button" value="7" name="val7" onclick="addnum(value)"/>
+                <input type="button" value="8" name="val8" onclick="addnum(value)"/>
+                <input type="button" value="9" name="val9" onclick="addnum(value)"/>
+                <input type="button" value="+" name="vale" onclick="addnum(value)"/>
+            </div>
+            <div class="row">
+                <input type="button" value="4" name="val9" onclick="addnum(value)"/>
+                <input type="button" value="5" name="val8" onclick="addnum(value)"/>
+                <input type="button" value="6" name="val7" onclick="addnum(value)"/>
+                <input type="button" value="-" name="vale" onclick="addnum(value)"/>
+            </div>
+            <div class="row">
+                <input type="button" value="1" name="val9" onclick="addnum(value)"/>
+                <input type="button" value="2" name="val8" onclick="addnum(value)"/>
+                <input type="button" value="3" name="val7" onclick="addnum(value)"/>
+                <input type="button" value="*" name="vale" onclick="addnum(value)"/>
+            </div>
+            <div class="row">
+                <input type="button" value="." name="val7" onclick="addnum(value)"/>
+                <input type="button" value="0" name="val8" onclick="addnum(value)"/>
+                <input type="button" value="/" name="val9" onclick="addnum(value)"/>
+                <input type="button" title="double click to clear" onclick="find()" id="eql" value="=">
+            </div>
+            
+        </div>
+       
+    </section>
+    <footer>
+        <p>&copy; codewith-pm</p>
+    </footer>
+    <script>
+        let result = document.querySelector('#dis');
+        let eql = document.querySelector('#eql');
+
+       
+
+        function addnum(num){
+           result.value += num;
+        }
+        function find(){
+            console.log(result.value)
+        if(result.value==""){
+            alert("Enter value")
+            console.log("Enter value")
+        }else{
+            result.value = eval(result.value)
+            console.log(result.value)
+        }
+   
+    }
+         eql.addEventListener('dblclick', function(){
+            if(result.value!=''){ result.value="";
+                console.log("cleared")
+            }})
+         
+    </script>
+</body>
+</html>
